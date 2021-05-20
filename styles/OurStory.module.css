@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  background-color: white;
+  color: black;
+  grid-area: -1 / span 2;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.wrapper {
+  margin: 5vh 0;
+  width: 75%;
+  font-size: 20px;
+  color: #a02338;
+}
+
+.ourStory {
+  font-size: 50px;
+  color: #D12E49;
+  letter-spacing: 2px;
+}

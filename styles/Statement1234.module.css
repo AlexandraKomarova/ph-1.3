@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.statement1234 {
+  grid-area: 2/1/-1/-1;
+  font-family: 'Quicksand', sans-serif;
+  z-index: 3;
+  color: #D12E49;
+  font-size: 30px;
+}
+
+@media only screen 
+  and (orientation: portrait) {
+  .statement1234 {
+    font-size: 23px;
+  }
+}

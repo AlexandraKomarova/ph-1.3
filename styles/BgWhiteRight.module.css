@@ -1,0 +1,12 @@
+.bgWhiteRight {
+  grid-area: 1/2/-1/-1;
+  background-color: white;
+  z-index: 1;
+}
+
+@media only screen 
+  and (orientation: portrait) {
+  .bgWhiteRight {
+    display: none;
+  }
+}

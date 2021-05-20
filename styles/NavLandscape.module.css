@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?&family=Quicksand:wght@300&display=swap');
+
+.nav {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  display: grid;
+  grid-template: 1fr / max-content 1fr;
+}
+
+.whiteAbout, .redAbout {
+  grid-area: 1/1/-1/2;
+  align-self: end;
+}
+
+.whiteCommunity, .redCommunity {
+  grid-area: 1/2/-1/-1;
+  align-self: end;
+  justify-self: end;
+}
+
+.whiteAbout, .whiteCommunity {
+  color: white;
+}
+
+.redAbout, .redCommunity {
+  overflow: hidden;
+  font-size: 20px;
+  color: #D12E49;
+  z-index: 1;
+  border: 1.5px solid #D12E49;
+  border-radius: 20px;
+  padding: 10px;
+  position: relative;
+  /* background: linear-gradient(to top, red 50%, white 50%);
+  background-size: 100%;
+  background-position: top; */
+}
+
+.redAbout:hover, .redCommunity:hover {
+  color: white;
+}
+
+.redAbout:before, .redCommunity:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150%;
+  height: 150%;
+  z-index: -1;
+  transform: translateY(50px);
+  background: #D12E49;
+  height: 100%;
+  /* border-radius: 50%; */
+  
+  transition: transform 0.3s;
+}
+
+.redAbout:hover:before, .redCommunity:hover:before {
+  transform: translateY(0);
+}
+
+/* .redAbout:hover, .redCommunity:hover {
+  background-position: top;
+} */
+
+@media only screen 
+  and (orientation: portrait) {
+  .nav {
+    display: none;
+  }
+}

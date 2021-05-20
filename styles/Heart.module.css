@@ -1,0 +1,49 @@
+.firstHeart {
+  grid-area: 1/1/-1/-1;
+  justify-self: center;
+  align-self: center;
+  width: 5%;
+}
+
+@media only screen 
+  and (orientation: portrait) {
+  .firstHeart {
+    width: 20%;
+    align-self: start;
+    margin-top: 40vh;
+  }
+}
+
+.firstHeart {
+  /* animation: firstHeart 1.5s linear forwards;
+  transition: opacity 1.5s; */
+}
+
+@keyframes firstHeart {
+  /* 0% { 
+    opacity: 0; 
+  }
+  10% { 
+    opacity: 0.5; 
+  }
+  20% { 
+    opacity: 1;
+    transform: rotate(15deg) scale(1.1);
+  }
+  25% { 
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  50% { 
+    opacity: 1; 
+  }
+  70% { 
+    opacity: 1; 
+  }
+  80% { 
+    opacity: 0.5; 
+  }
+  100% { 
+    opacity: 0; 
+  } */
+}

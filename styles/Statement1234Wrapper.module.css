@@ -1,0 +1,16 @@
+.statement1234Wrapper {
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template: max-content max-content / 100%;
+  grid-row-gap: 6vh;
+}
+
+@media only screen 
+  and (orientation: portrait) {
+    .statement1234Wrapper {
+      align-self: start;
+      margin-top: 3vh;
+      grid-row-gap: 2vh;
+    }
+  }

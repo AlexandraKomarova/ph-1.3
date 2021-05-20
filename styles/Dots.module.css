@@ -1,0 +1,24 @@
+.dots {
+  grid-area: 1/1/2/-1;
+  display: flex;
+  z-index: 1;
+}
+
+.dots span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #D12E49;
+  margin: 5px 5px 0px 0px;
+}
+
+@media only screen 
+  and (orientation: portrait) {
+    .dots span {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #D12E49;
+      margin: 5px 5px 0px 0px;
+    }
+  }

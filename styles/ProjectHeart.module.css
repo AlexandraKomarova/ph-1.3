@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?&family=Quicksand:wght@300&family=Comfortaa:wght@500&display=swap');
+
+.projectHeart {
+  width: 80%;
+  font-family: 'Comfortaa', cursive;
+  font-size: 90px;
+  line-height: 1.1;
+  margin: auto;
+  margin-left: 85px;
+  color: #D12E49;
+  display: grid;
+  grid-template: auto auto / auto auto;
+}
+
+.project {
+  grid-area: 1/1/2/-1;
+}
+
+.heartWord {
+  grid-area: 2/1/-1/2;
+  align-self: center;
+}
+
+.blobHeart {
+  grid-area: 2/2/-1/-1;
+  align-self: center;
+  width: 60%;
+}
+
+@media only screen 
+  and (orientation: portrait) {
+  .projectHeart {
+    width: 75%;
+    font-size: 40px;
+    margin-left: 30px;
+  }
+
+  .blobHeart {
+    grid-area: 2/2/-1/-1;
+    margin-top: 2px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,9 @@
+.bgRed {
+  grid-area: 1/1/-1/-1;
+  background-color: #D12E49;
+}
+
+@media only screen 
+  and (orientation: portrait) {
+    
+}

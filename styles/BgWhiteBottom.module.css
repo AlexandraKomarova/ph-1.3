@@ -1,0 +1,12 @@
+.bgWhiteBottom {
+  overflow: hidden;
+  grid-area: 2/1/-1/-1;
+  background-color: white;
+}
+
+@media only screen 
+  and (orientation: landscape) {
+  .bgWhiteBottom {
+    display: none;
+  }
+}
